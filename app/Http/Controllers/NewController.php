@@ -11,4 +11,8 @@ class NewController extends Controller
        
         return response()->json([ 'msg' => 'The post successfully added']);
     }
+
+    public function create_tag(){
+    	return "it s working";
+    }
 }

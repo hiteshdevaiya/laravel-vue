@@ -7,13 +7,24 @@ import SecondPage from './components/pages/secondpage';
 import hooks from './components/pages/basic/hooks';
 import methods from './components/pages/basic/methods';
 
+//projects
+import home from './components/pages/home';
+import tags from './components/pages/tags';
+
+
 const prefixurl = "/vue-laravel";
 
 const routes = [
 	//projects
 	{
 		path : prefixurl+'/',
-		component : FirstPage,
+		component : home,
+		name : 'vue-laravel',
+	},
+	{
+		path : prefixurl+'/tags',
+		component : tags,
+		name : 'tags',
 	},
 
 

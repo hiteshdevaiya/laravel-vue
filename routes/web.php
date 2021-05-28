@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 
 Route::get('/new', 'NewController@new');
+Route::post('/app/create_tag', 'NewController@create_tag');
 
 Route::any('{slug}', function () {
     return view('welcome');
